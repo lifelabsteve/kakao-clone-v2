@@ -8,14 +8,15 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
     />
-    <link rel="stylesheet" href="style.css" class="style" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <title>Friends | Kakao Clone</title>
   </head>
   <body>
     <div class="status-bar">
-      <div class="status-bar__column"></div>
-      <span class="status-bar__clock">13:54</span>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">13:54</span>
+      </div>
       <div class="status-bar__column">
         <i class="fas fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
@@ -26,48 +27,52 @@
     </div>
     <hearder class="header">
       <div class="header__header-column">
-        <h1 class="header__header-title">Friends</h1>
+        <h1 class="header__title">Friends</h1>
       </div>
       <div class="header__header-column">
-        <span class="header__header-icon">
+        <span class="header__header__icon">
           <i class="fas fa-search"></i>
         </span>
-        <span class="header__header-icon">
+        <span class="header__icon">
           <i class="fas fa-cog"></i>
         </span>
       </div>
     </hearder>
     <main class="friends">
       <header class="friends_header">
-        <div class="friends__friend friend friend--lg">
-          <img src="images/avatar.jpg" alt="" class="friend__avatar g-avatar" />
+          <div class="friends__friend friend">
+              <div class="friend__column">
+                <img src="images/avatar.jpg" class="friend__avatar" />
           <div class="friend__content">
             <span class="friend__name">Steve Hong</span>
-            <span class="friend__stauts">lifelab studing</span>
+            <span class="friend__status">studying</span>
           </div>
         </div>
       </header>
-      <div class="friends__plus-friend">
-        <h5 class="friends__plus-title">Plus Friend</h5>
+      <div class="friends__plus">
+        <h5 class="friends__title">Plus Friend</h5>
         <div class="friends__friend friend">
-          <img src="images/avatar.jpg" alt="" class="friend__avatar g-avatar" />
+            <div class="friend__column">
+          <img src="images/avatar.jpg" class="friend__avatar" />
           <div class="friend__content">
             <span class="friend__name">Plus Friend</span>
+          </div>
           </div>
         </div>
       </div>
       <ul class="friends__list">
-        <li class="friends__friend friend">
+          <h5 class="friends__title">Friends 14</h5>
+          <li class="friends__friend friend">
           <div class="friend__column">
-                <img src="images/avatar.jpg" alt="" class="friend__avatar g-avatar" />
-            <div class="friend__content">
-              <span class="friend__name">Steve Hong</span>
-              <span class="friend__stauts">lifelab studing</span>
-            </div>
-        </div>
-         <div class="friend__culumn">
-          <div class="friend__now-litsening">FTISLAND (FT lifelab)</div>
-            <span><i class="fas fa-play"></i></span>
+              <img src="images/avatar.jpg" class="friend__avatar" />
+              <div class="friend__content">
+                <span class="friend__name">Steve Hong</span>
+                <span class="friend__status">studying</span>
+              </div>
+          </div>
+          <div class="friend__culumn">
+            <div class="friend__now-listening">
+              <span>FTISLAND (FT lifelab) <i class="fas fa-play"></i></span>
             </div>
           </div>
         </li>
@@ -97,5 +102,8 @@
         </li>
       </ul>
     </nav>
+    <div class="bigScreen">
+        <span class="bigScreen__text">Please make your screen small!</span>
+      </div>
   </body>
 </html>
